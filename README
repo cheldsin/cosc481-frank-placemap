@@ -9,45 +9,30 @@
 
 Chris, Nathan, Frank
 
-############ INTRODUCTION ############
+Week 7 Version
 
-############ COMPILING ############
+############ DESCRIPTION ############
 
-Running make will compile the required classes. lib contains required external libraries.
+PlaceMap plots places-of-interest along a route.
 
-make
+The current version is XHTML/Javascript based and uses Google Maps.
 
-############ PLACES ON ROUTE APP ############
+########### USAGE ##############
 
-org.placemap.tests.PlacesOnRoute
+The htmljs/ directory contains the necessary XHTML and Javascript files to view the map. 
 
-This class asks for a start city and end city. It uses MapQuest to find a route (latitude/longitude on legs). It then uses Google Places to find places near the latitude/longitude of each leg of route.
+htmljs/tabs.html
+	The HTML and Javascript program.
 
+########### CONFIGURATION LOG ###########
 
+The configuration log required for week 3 is in
 
-############ TEST CLASS ############
+log/git.log
 
-org.placemap.tests.TextUI asks for a start city, state and end city, state. It returns the response JSON.
+############ UNIT TESTS ############
 
-java -cp .:lib/* org.placemap.tests.TextUI
+Unit Tests have been created using the JSUnit-small library.
 
-Example:
-
-:: Test Text UI ::
-Enter start point and end point.
-  Enter start city and state "City, State": Port Huron,MI
-  Enter end city and state "City, State": Ypsilanti,MI
-
----
-
-org.placemap.tests.Test1 requests from the MapQuest API directions from Lancaster,PA to York,PA and prints the JSON response. JSON-lib is also tested by parsing the JSON string to a JSONObject (Java object).
-
-Run the test class with this:
-
-java -cp .:lib/* org.placemap.tests.Test1
-
-############ DOCUMENTATION ############
-
-############ LIB ############
-
-contains the required libraries for json-lib.
+htmljs/jsunit.html
+	Runs the Unit Tests.

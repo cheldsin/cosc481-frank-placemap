@@ -1,0 +1,14 @@
+# GIT will ignore these files
+# http://linux.die.net/man/5/gitignore
+
+# java class files
+*.class
+
+# backup files
+*~
+*.bak
+\#*
+
+# configuration file
+org/placemap/Configuration.java
+

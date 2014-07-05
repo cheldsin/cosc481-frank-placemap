@@ -1,0 +1,132 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    font-family: Georgia;
+    padding:0px;
+    overflow: hidden;
+}
+
+/* ==================================== */
+/* tabbed interface */
+
+div#tabs {
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    display:block;
+
+    height:100%;
+    width:100%;
+}
+
+div#tabs > div {
+    font-family: Verdana;
+    display:block;
+    height:80%;
+    overflow-y: scroll;
+}
+
+div#startTab label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+    font-size: 12pt;
+
+}
+
+
+div#startTab input[type=text] {
+    font-size:12pt;
+    padding: 2px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+div#startTab select {
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 2px;
+    background: white;
+    width: 250px;
+}
+
+div#startTab input[type=button] {
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+div.placeitem {
+    cursor: default;
+    padding:5px;
+    background:inherit;
+}
+
+div.placeitem:hover {
+    background:#ccc;
+}
+
+
+div.markerContent {
+    font-size: 11pt;
+}
+
+
+
+/* ==================================== */
+/* old builtin interface */
+
+/*
+
+div#testmap1 {
+    position:absolute;
+    top:0px;
+    left:0px;
+
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+
+
+}
+
+div.mapdiv {
+    position:absolute;
+    display:inline-block;
+    top:0px;
+    left:210px;
+    width:700px;
+    height:100%;
+    background:green;
+}
+
+div.inputdiv {
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:0px;
+    width:200px;
+    height:100%;
+    background:#ddf;
+    padding:5px;
+}
+
+div.inputdiv input[type=text] {
+    width:90%;
+    display:inline-block;
+    border:1px solid black;
+    padding:4px;
+    margin-bottom:2px;
+}
+
+div.inputdiv label {
+    display:inline-block;
+    width: 90px;
+    font-weight:bold;
+}
+
+*/
